@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::placeholder {
+    color: white;
+}
+
+body {
+    background: orangered url("/Fundo.jpg") no-repeat center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.box-login {
+    border-radius: 25px;
+    width: 600px;
+    height: 300px;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6); 
+}
+
+.box-login .box-name,
+.box-login .box-senha {
+    width: 80%;
+    padding: 16px;
+    margin: 6px;
+    border-radius: 15px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    font-size: 16px;
+    outline: none;
+}
+
+.box-login .box-senha {
+    border-color: white;
+}
+
+.box-login .button-login {
+    padding: 16px;
+    width: 33%;
+    text-align: center;
+    background: orangered;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.box-login .button-login:hover {
+    background: white;
+    color: orangered;
+    transform: scale(1.1);
+}
